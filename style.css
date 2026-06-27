@@ -109,6 +109,9 @@ input:focus {
 
 .card-id,
 .card-user {
+  padding: 8px;
+  background-color: rgb(173, 223, 241, 0.2);
+  border-radius: 20px;
   font-size: 13px;
   font-weight: 600;
   color: #8ec5ff;
