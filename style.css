@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  background-color: #1e2229;
+  color: #e5e9f0;
+  padding: 20px 16px;
+}
+
+.container {
+  width: min(1220px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 20px 0 18px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: min(480px, 100%);
+  margin: 0 auto;
+  padding: 0 16px;
+  border-radius: 100px;
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(229, 233, 240, 0.2);
+}
+
+.search-container img {
+  flex-shrink: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 44px;
+  border-radius: 100px;
+  padding: 0 4px;
+  background: transparent;
+  font-size: 15px;
+  color: #1e2229;
+  transition: all 0.5s ease;
+}
+
+input:focus {
+  transition: all 0.5s ease;
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(229, 233, 240, 0.3);
+}
+
+.posts-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.card {
+  flex: 1 1 280px;
+  max-width: 340px;
+  min-width: 240px;
+  background: #2a303b;
+  border: 1px solid #3a4150;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  transition: all 0.5s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.card-id,
+.card-user {
+  font-size: 13px;
+  font-weight: 600;
+  color: #8ec5ff;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.card-body {
+  color: #c7d0dc;
+  line-height: 1.5;
+}
+
+.loading,
+.error {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  color: #f7c7c7;
+}
